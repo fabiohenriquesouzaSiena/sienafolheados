@@ -1,10 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-  <title>SienaFolheados</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SienaFolheados</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0a0a0a;
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  color: gold;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.banner {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.banner h1 {
+  color: gold;
+  font-size: 24px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: gold;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.produto {
+  background: #1a1a1a;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+}
+</style>
 </head>
-<body style="background:black; color:white; text-align:center;">
-  <h1>SienaFolheados</h1>
-  <p>Site funcionando 🔥</p>
+
+<body>
+
+<header>SienaFolheados</header>
+
+<div class="banner">
+  <h1>Semijoias masculinas com estilo</h1>
+  <p>Qualidade e preço acessível</p>
+  <a class="btn" href="https://wa.me/31983470323">Comprar no WhatsApp</a>
+</div>
+
+<section class="produtos">
+  <div class="produto">
+    <img src="https://via.placeholder.com/200">
+    <p>Corrente Masculina</p>
+  </div>
+
+  <div class="produto">
+    <img src="https://via.placeholder.com/200">
+    <p>Pulseira Masculina</p>
+  </div>
+</section>
+
+<a class="whatsapp" href="https://wa.me/5531SEUNUMERO">💬</a>
+
 </body>
 </html>
