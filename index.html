@@ -4,216 +4,138 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SienaFolheados</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
 
+  <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: Arial;
       background: #0a0a0a;
-      color: #ffffff;
+      color: white;
     }
 
     header {
-      background: #000000;
-      padding: 18px 20px;
       text-align: center;
+      padding: 20px;
+      background: black;
       border-bottom: 1px solid #222;
     }
 
-    header h1 {
-      margin: 0;
-      color: gold;
-      font-size: 30px;
+    header img {
+      height: 70px;
     }
 
     .banner {
       text-align: center;
-      padding: 50px 20px 35px;
-      background: linear-gradient(to bottom, #111, #0a0a0a);
+      padding: 40px 20px;
     }
 
     .banner h2 {
-      margin: 0 0 12px;
       color: gold;
-      font-size: 28px;
-    }
-
-    .banner p {
-      margin: 0 auto 20px;
-      max-width: 600px;
-      color: #ddd;
-      font-size: 16px;
-      line-height: 1.5;
     }
 
     .btn {
       display: inline-block;
-      padding: 12px 22px;
+      margin-top: 15px;
+      padding: 12px 20px;
       background: gold;
-      color: #000;
+      color: black;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 6px;
       font-weight: bold;
-    }
-
-    .secao {
-      padding: 30px 20px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .secao h3 {
-      text-align: center;
-      color: gold;
-      font-size: 24px;
-      margin-bottom: 25px;
     }
 
     .produtos {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 20px;
     }
 
     .produto {
-      background: #171717;
-      border-radius: 12px;
+      background: #1a1a1a;
+      border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 0 12px rgba(0,0,0,0.25);
+      text-align: center;
     }
 
     .produto img {
       width: 100%;
-      height: 320px;
+      height: 250px;
       object-fit: cover;
-      display: block;
     }
 
-    .produto-info {
-      padding: 15px;
-      text-align: center;
-    }
-
-    .produto-info h4 {
-      margin: 0 0 10px;
-      color: #fff;
-      font-size: 18px;
-    }
-
-    .produto-info p {
-      margin: 0 0 12px;
-      color: #ccc;
-      font-size: 14px;
-      line-height: 1.4;
+    .produto h3 {
+      margin: 10px 0;
     }
 
     .preco {
-      display: block;
-      margin-bottom: 14px;
       color: gold;
-      font-size: 18px;
       font-weight: bold;
     }
 
-    .sobre {
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto;
-      color: #ddd;
-      line-height: 1.6;
-    }
-
     footer {
-      background: #000;
       text-align: center;
       padding: 20px;
-      color: #aaa;
+      background: black;
       margin-top: 20px;
-      border-top: 1px solid #222;
     }
 
     .whatsapp {
       position: fixed;
-      right: 18px;
-      bottom: 18px;
+      bottom: 20px;
+      right: 20px;
       background: #25D366;
       color: white;
-      text-decoration: none;
-      width: 56px;
-      height: 56px;
+      padding: 15px;
       border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 26px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      text-decoration: none;
+      font-size: 20px;
     }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>SienaFolheados</h1>
-  </header>
+<header>
+  <img src="logo.png">
+</header>
 
-  <section class="banner">
-    <h2>Semijoias masculinas com estilo</h2>
-    <p>Correntes e pulseiras com visual forte, acabamento bonito e preço acessível.</p>
-    <a class="btn" href="https://wa.me/5531983470323" target="_blank">Chamar no WhatsApp</a>
-  </section>
+<div class="banner">
+  <h2>Semijoias masculinas com estilo</h2>
+  <p>Qualidade e preço acessível</p>
+  <a class="btn" href="https://wa.me/5531983470323">Comprar no WhatsApp</a>
+</div>
 
-  <section class="secao">
-    <h3>Mais Vendidos</h3>
+<section class="produtos">
 
-    <div class="produtos">
-      <div class="produto">
-        <img src="cruz-lisa.jpeg" alt="Corrente com cruz lisa">
-        <div class="produto-info">
-          <h4>Corrente Cruz Lisa</h4>
-          <p>Modelo masculino discreto, moderno e fácil de combinar.</p>
-          <span class="preco">R$ 49,90</span>
-          <a class="btn" href="https://wa.me/5531983470323" target="_blank">Comprar</a>
-        </div>
-      </div>
+  <div class="produto">
+    <img src="cruz-lisa.jpeg">
+    <h3>Corrente Cruz Lisa</h3>
+    <p class="preco">R$ 49,90</p>
+    <a class="btn" href="https://wa.me/5531983470323">Comprar</a>
+  </div>
 
-      <div class="produto">
-        <img src="kit-correntes.jpeg" alt="Kit de correntes masculinas">
-        <div class="produto-info">
-          <h4>Kit Correntes Masculinas</h4>
-          <p>Mix de correntes para quem gosta de presença e estilo no visual.</p>
-          <span class="preco">R$ 69,90</span>
-          <a class="btn" href="https://wa.me/5531983470323" target="_blank">Comprar</a>
-        </div>
-      </div>
+  <div class="produto">
+    <img src="kit-correntes.jpeg">
+    <h3>Kit Correntes</h3>
+    <p class="preco">R$ 69,90</p>
+    <a class="btn" href="https://wa.me/5531983470323">Comprar</a>
+  </div>
 
-      <div class="produto">
-        <img src="corrente-cadeado.jpeg" alt="Corrente cadeado com cruz">
-        <div class="produto-info">
-          <h4>Corrente Cadeado com Cruz</h4>
-          <p>Peça marcante, com estilo forte e excelente apelo de venda.</p>
-          <span class="preco">R$ 59,90</span>
-          <a class="btn" href="https://wa.me/5531983470323" target="_blank">Comprar</a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <div class="produto">
+    <img src="corrente-cadeado.jpeg">
+    <h3>Corrente Cadeado com Cruz</h3>
+    <p class="preco">R$ 59,90</p>
+    <a class="btn" href="https://wa.me/5531983470323">Comprar</a>
+  </div>
 
-  <section class="secao">
-    <h3>Sobre a SienaFolheados</h3>
-    <p class="sobre">
-      A SienaFolheados nasceu para oferecer semijoias masculinas com estilo, qualidade e preço acessível.
-      Trabalhamos com correntes e pulseiras pensadas para quem quer se destacar no visual sem pagar caro.
-    </p>
-  </section>
+</section>
 
-  <footer>
-    © 2026 SienaFolheados - Todos os direitos reservados
-  </footer>
+<footer>
+  © SienaFolheados
+</footer>
 
-  <a class="whatsapp" href="https://wa.me/5531983470323" target="_blank">💬</a>
+<a class="whatsapp" href="https://wa.me/5531983470323">💬</a>
 
 </body>
 </html>
